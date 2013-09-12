@@ -20,13 +20,27 @@ a specific duration. Think  of it more like of a keepalive:
 If _defer_  has not been called since _timeout_, the _script_ will
 be executed.
 
+Also note, that each defer is identified by all its argumeents
+(more precise: "$0 $@").
+This means, that each ooof the following calls  are completely individual:
+
+```bash
+defer 0.1 "echo a" "echo b"
+defer 0.2 "echo a" "echo b"
+defer 0.2 "echo  a" "echo b"
+```
+
 ## EXAMPLES
 
-TODO!
+My motivation for writing this, was to display mmmy tmux status bar
+only when holding  down a key, so I added this to my config::
 
-## IMPLEMENTATION
+```bash
+bind -nr ^ run-shell -b "defer 0.15 'tmux set -g status off'  'tmux set -g status on' 2>/dev/null >/dev/null"
+```
 
-TODO!
+This means: While circumflex is pressed invoke the comand given in regular
+intervals.
 
 ## VERION
 
@@ -58,4 +72,7 @@ https://github.com/koraa/defer.sh/pulls
 
 ## COPYING
 
-TODO!
+Copyright © 2013 Free Software Foundation, Inc. License GPLv3+: 
+GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
