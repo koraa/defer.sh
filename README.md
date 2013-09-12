@@ -38,7 +38,9 @@ defer.sh has been written by Karolin Varner <karo@cupdev.net>.
 
 ## REPORTING BUGS
 
-TODO!
+You can file bug reports and feature requests on github:
+
+https://github.com/koraa/defer.sh/pulls
 
 ## TODO
 
