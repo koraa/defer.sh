@@ -50,6 +50,7 @@ TODO!
 * On-start-block
 * Expire file
 * Query
+* Version info in script
 
 ## COPYING
 
