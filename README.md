@@ -51,6 +51,7 @@ TODO!
 * Expire file
 * Query
 * Version info in script
+* Support --help/-h (inject manpage?)
 
 ## COPYING
 
