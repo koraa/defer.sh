@@ -14,7 +14,6 @@ tf="$TMP/defer-$id.tmp"
 
 if test -e "$tf"; then
   echo "1" > "$tf"
-  echo DEFER
 else
   sh <<< "$startf"
 
