@@ -54,6 +54,7 @@ https://github.com/koraa/defer.sh/pulls
 * Query
 * Version info in script
 * Support --help/-h (inject manpage?)
+* Silent mode  for commands
 
 ## COPYING
 
