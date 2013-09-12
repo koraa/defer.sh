@@ -42,7 +42,14 @@ TODO!
 
 ## TODO
 
-TODO! (haha)
+* Options: nofork, tmpdir, signature, tmpfile, hashf
+* Accumulate mode
+* Timeout mode (force delay between invocations)
+* Signal sources: SIGUSR1, fifo, pipe
+* On-defer-block
+* On-start-block
+* Expire file
+* Query
 
 ## COPYING
 
