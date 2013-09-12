@@ -58,7 +58,7 @@ https://github.com/koraa/defer.sh/pulls
 
 ## TODO
 
-* Options: nofork, tmpdir, signature, tmpfile, hashf
+* Longopts
 * Accumulate mode
 * Timeout mode (force delay between invocations)
 * Signal sources: SIGUSR1, fifo, pipe
